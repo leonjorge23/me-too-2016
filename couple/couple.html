@@ -1,0 +1,23 @@
+<topnav></topnav>
+<div class="container">
+	<div class="row couple-profile top-100">
+		<h1>Couple Profile</h1>
+			<div class="col-sm-6 couple-image">
+                <img src="{{model.profile.couple_photo || 'uploads/gravatar-temp.png'}}" alt="sample image" class="img-thumbnail">
+			</div>
+			<div class="col-sm-6">
+				<h2>{{model.profile.her_name}} & {{model.profile.his_name}} {{model.profile.last_name}}</h2>
+				<p><strong class="text-primary">Address:</strong> {{model.profile.address}}</p>
+				<p><strong class="text-primary">City:</strong> {{model.profile.city}}</p>
+				<p><strong class="text-primary">Zip Code:</strong> {{model.profile.zip}}</p>
+				<p><strong class="text-primary">Home Phone:</strong> {{model.profile.home_phone}}</p>
+				<p><strong class="text-primary">His Cell:</strong> {{model.profile.his_cell || "N/A"}}</p>
+				<p><strong class="text-primary">Her Cell:</strong> {{model.profile.her_cell || "N/A"}}</p>
+				<p><strong class="text-primary">Primary Email:</strong> {{model.profile.primary_email || "N/A"}}</p>
+				<p><strong class="text-primary">Secondary Email:</strong> {{model.profile.secondary_email || "N/A"}}</p>
+				<div>
+					<button class="btn btn-primary" ng-click="model.goToEditCouple(model.profile.$id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button>
+				</div>
+			</div>
+	</div>
+</div>

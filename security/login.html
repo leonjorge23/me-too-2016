@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4 jumbotron signin">
+			<form class="form-signin" >
+				<h2 class="form-signin-heading">Please sign in</h2>
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="model.email" required autofocus>
+				<label for="inputPassword" class="sr-only">Password</label>
+				<input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="model.password" required>
+				<button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="model.submitAuth()">Sign in</button>
+			</form>
+			<div ng-show="!!model.errorMessage">
+				<span class="error-message" >{{model.errorMessage}}</span>
+			</div>
+		</div>
+	</div>
+</div>
+

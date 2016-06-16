@@ -1,0 +1,88 @@
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mr-10{
+  margin-right: 10px !important;
+}
+.mt-20 {
+  margin-top:20px !important;
+}
+.top-100 {
+  margin-top: 100px;
+}
+.signin {
+  margin-top: 60px;
+}
+.form-signin input {
+  margin-bottom: 10px;
+}
+span.error-message {
+  margin-top: 10px;
+  display: inline-block;
+  color: #ff0000;
+
+}
+.register-link {
+  display: block;
+}
+.main-content {
+  margin-top: 100px;
+}
+.me-tool .navbar-inverse .navbar-brand {
+  color: #fff!important;
+}
+.main-content > h2 {
+  margin-bottom: 40px;
+}
+
+.dashboard-partial {
+  min-height: 150px;
+}
+
+.dashboard-partial button.btn.btn-primary {
+  margin-top: 15px;
+  float: right;
+}
+
+.top-100 {
+  margin-top: 100px;
+}
+
+.edit-couple-footer {
+  position: relative;
+  min-height: 60px
+}
+
+.submit-pic i {
+    font-size: 18px;
+}
+a.submit-pic {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Form Validation */
+input.ng-invalid.ng-touched {
+    border: 1px solid #da3637;
+}
+
+input.ng-valid.ng-touched {
+    border: 1px solid #509d12
+}
+
+.ng-invalid .btn {
+    box-shadow: none;
+    opacity: .65;
+}
+
+.error {
+    color: red;
+    padding-bottom: 10px;
+}
+/* removes the blue line around links */
+a[role="button"]:focus {
+  outline: 0;
+}

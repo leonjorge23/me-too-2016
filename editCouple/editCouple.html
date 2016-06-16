@@ -1,0 +1,73 @@
+<topnav></topnav>
+<div class="container">
+	<div class="col-sm-10 col-sm-offset-1">
+		<div class="well top-100">
+			<h2>Edit Couple Profile</h2>
+			<img class="img-thumbnail center-block mt-20" src="{{model.profile.couple_photo || 'uploads/gravatar-temp.png'}}" alt="{{model.profile.couple_photo}}">
+			<form class="mt-20" ng-submit="model.submit()">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="his_name">His Name</label>
+							<input type="text" class="form-control" id="his_name" ng-model="model.profile.his_name">
+						</div>
+						<div class="form-group">
+							<label for="her_name">Her Name</label>
+							<input type="text" class="form-control" id="her_name" ng-model="model.profile.her_name">
+						</div>
+						<div class="form-group">
+							<label for="last_name">Her Name</label>
+							<input type="text" class="form-control" id="last_name" ng-model="model.profile.last_name">
+						</div>
+						<div class="form-group">
+							<label for="address">Address</label>
+							<input type="text" class="form-control" id="address" ng-model="model.profile.address">
+						</div>
+						<div class="form-group">
+							<label for="city">City</label>
+							<input type="text" class="form-control" id="city" ng-model="model.profile.city">
+						</div>
+						<div class="form-group">
+							<label for="zip">Zip Code</label>
+							<input type="text" class="form-control" id="zip" ng-model="model.profile.zip">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="home_phone">Home Phone</label>
+							<input type="text" class="form-control" id="home_phone" ng-model="model.profile.home_phone">
+						</div>
+						<div class="form-group">
+							<label for="his_cell">His Cell</label>
+							<input type="text" class="form-control" id="his_cell" ng-model="model.profile.his_cell">
+						</div>
+						<div class="form-group">
+							<label for="her_cell">Her Cell</label>
+							<input type="text" class="form-control" id="her_cell" ng-model="model.profile.her_cell">
+						</div>
+						<div class="form-group">
+							<label for="primary_email">Primary Email</label>
+							<input type="text" class="form-control" id="primary_email" ng-model="model.profile.primary_email">
+						</div>
+						<div class="form-group">
+							<label for="secondary_email">Secondary Email</label>
+							<input type="text" class="form-control" id="secondary_email" ng-model="model.profile.secondary_email">
+						</div>
+						<div class="form-group">
+							<h4>Update Couple's picture</h4>
+                            <a class="submit-pic" ngf-select="model.uploadFiles($file, $invalidFiles)" ng-model="file" name="file" ngf-max-size="20MB"><i class="fa fa-upload" aria-hidden="true"></i> Upload new picture</a>
+                            <p class="text-danger" ng-bind="model.submitMessage"></p>
+						</div>
+					</div>
+				</div>
+				<div class="edit-couple-footer mt-20">
+					<button class="btn btn-default pull-right" ng-click="model.cancel()"><i class="fa fa-reply" aria-hidden="true"></i> Cancel</button>
+					<button type="submit" class="btn btn-primary pull-right mr-10">Submit</button>
+				</div>
+			</form>
+
+			</body>
+		</div>
+	</div>
+</div>
+
